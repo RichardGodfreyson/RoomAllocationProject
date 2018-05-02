@@ -32,9 +32,9 @@ def diversityEvaluation(allocation):
     each line contains the members of the room
     returns the diversity of the allocation
     '''
-    
+
     div = 0
     for room in allocation.values():
         nationalities = [people[name] for name in room]
         div += diversity(Counter(nationalities)) #Calculate diversity for each room
-    retrun diversity
+    return div
